@@ -26,12 +26,14 @@
                     <li class="nav-item">
                         <a href="/chamadas/create" class="nav-link">Criar Chamadas</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Entrar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Cadastrar</a>
-                    </li>
+                    @guest
+                        <li class="nav-item">
+                            <a href="/login" class="nav-link">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/register" class="nav-link">Cadastrar</a>
+                        </li>
+                    @endguest
                 </ul>
             </div>
         </nav>
