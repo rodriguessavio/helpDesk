@@ -1,5 +1,5 @@
 <style>
-        body {
+        /* body {
             font-family: 'Arial', sans-serif;
             background-color: #7E07F9;
             margin: 0;
@@ -43,7 +43,7 @@
 
         .botao:hover {
             background-color: #cc0000; 
-        }
+        } */
 </style>
 
 <x-guest-layout>
@@ -103,7 +103,7 @@
             <span class="text-sm text-gray-600">
                 {{ __("Não tem uma conta?") }}
             </span>
-            <a class="underline text-sm text-blue-500 hover:text-blue-700" href="{{ route('register') }}" style="color: #fff; text-decoration:none;">
+            <a class="underline text-sm text-blue-500 hover:text-blue-700" href="{{ route('register') }}" style="text-decoration:none;">
                 {{ __('Registre-se agora!') }}
             </a>
         </div>

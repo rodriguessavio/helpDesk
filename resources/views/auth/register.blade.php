@@ -1,5 +1,5 @@
 <style>
-        body {
+        /* body {
             font-family: 'Arial', sans-serif;
             background-color: #7E07F9;
             margin: 0;
@@ -24,7 +24,7 @@
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
-            color: #343a40; /* Dark text color */
+            color: #343a40; 
         }
 
         .botao {
@@ -42,7 +42,7 @@
 
         .botao:hover {
             background-color: #cc0000; 
-        }
+        } */
 
         
     
@@ -117,7 +117,10 @@
                     <x-button class="ms-4" class="botao">
                         {{ __('Cadastrar') }}
                     </x-button>
-                    <br><br>
+
+                    <br>
+                    <br>
+                    <br>
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
                         {{ __('Já tem uma conta?') }}
                     </a>
