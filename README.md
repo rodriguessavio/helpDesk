@@ -14,6 +14,7 @@ Instale as depências
 ```bash
 cd helpdesk
 composer install
+npm install
 ```
 
 Copie o arquivo de configuração
@@ -33,6 +34,7 @@ Crie o banco de dados e inicialize o servidor
 ```bash
 php artisan migrate
 php artisan serve
+npm run dev
 ```
 
 Execute e acesse o projeto
