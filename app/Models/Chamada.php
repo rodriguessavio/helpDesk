@@ -14,8 +14,11 @@ class Chamada extends Model
         'urgencia',
         'descricao',
         'status',
-        'maquina'
+        'maquina',
+        'image'
     ];
+
+    protected $guarded = [];
 
     public function user(){
         return $this->belongsTo('App\Models\User');

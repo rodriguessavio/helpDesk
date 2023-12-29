@@ -7,15 +7,17 @@ Route::get('/', [chamadaController::class, 'index'])->middleware('auth');
 
 // Route::get('/index', [chamadaController::class, 'index']);
 
-Route::get('/chamadas/create', [chamadaController::class, 'create']);
+Route::get('/chamadas/create', [chamadaController::class, 'create'])->middleware('auth');
+Route::get('/chamadas/{id}', [chamadaController::class, 'show'])->middleware('auth');
 
-Route::post('/chamadas', [chamadaController::class, 'store']);
+Route::post('/chamadas', [chamadaController::class, 'store'])->middleware('auth');
 
-Route::get('/chamadas/{id}', [chamadaController::class, 'show']);
+Route::delete('chamadas/{id}', [chamadaController::class, 'destroy'])->middleware('auth');
 
-Route::get('/historico', function () {
-    return view('historico');
-});
+Route::get('chamadas/edit/{id}', [chamadaController::class, 'edit'])->middleware('auth');
+
+Route::put('chamadas/update/{id}', [chamadaController::class, 'update'])->middleware('auth');
+
 
 Route::middleware([
     'auth:sanctum',

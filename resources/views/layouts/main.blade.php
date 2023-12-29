@@ -16,8 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
-                <a href="/" class="navbar-brand">
+                <a href="/" class="navbar-brand" style="margin-left: 20px;">
                     <img src="/img/logo.svg" alt="Logo helpdesk">
+                    <span style="font-size: 30px;">HELPDESK</span>
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
