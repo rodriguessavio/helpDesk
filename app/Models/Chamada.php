@@ -12,5 +12,13 @@ class Chamada extends Model
         'titulo',
         'duracao',
         'urgencia',
+        'descricao',
+        'status',
+        'maquina'
     ];
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
+
 }

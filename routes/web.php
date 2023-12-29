@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\chamadaController;
 
-Route::get('/', [chamadaController::class, 'index']);
+Route::get('/', [chamadaController::class, 'index'])->middleware('auth');
+
+// Route::get('/index', [chamadaController::class, 'index']);
 
 Route::get('/chamadas/create', [chamadaController::class, 'create']);
 
@@ -14,6 +16,7 @@ Route::get('/chamadas/{id}', [chamadaController::class, 'show']);
 Route::get('/historico', function () {
     return view('historico');
 });
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

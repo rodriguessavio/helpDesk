@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('titulo');
             $table->string('duracao');
             $table->string('urgencia');
+            $table->string('descricao');
+            $table->string('status')->default('pendente');
+            $table->string('maquina');
             $table->timestamps();
         });
     }

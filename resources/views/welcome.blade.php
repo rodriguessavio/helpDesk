@@ -19,11 +19,12 @@
         <div id="cards-container" class="row">
             @foreach($chamadas as $x)
                 <div class="card col-md-3">
-                    <!-- <img src="/img/pc-quebrado.jpg"> -->
+                    <img src="/img/chamadas/{{ $x->image }}">
                     <div class="card-body">
                         <p class="card-date">10/09/2023</p>
                         <h5 class="card-title">{{ $x->titulo }}</h5>
-                        <p class="card-duracao"> {{ $x->duracao }} </p>
+                        <p class="card-duracao"> Duração: {{ $x->duracao }} </p>
+                        <p>Status: {{ $x->status}}</p>
                         <a href="/chamadas/{{ $x->id}}" class="btn btn-primary"> Saber mais!</a>
                     </div>
                 </div>
